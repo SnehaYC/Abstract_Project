@@ -1,0 +1,132 @@
+/* src/ManagerDashboard.css */
+
+.manager-dashboard {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f7f6;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.75rem;
+  margin-bottom: 15px;
+}
+
+.request-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.request-item {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.request-item.selected {
+  background-color: #e0f7fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.request-info {
+  font-size: 1rem;
+  color: #333;
+}
+
+.request-actions .select-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.request-actions .select-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.action-section {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.action-section textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  resize: vertical;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.action-section textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.action-buttons button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.action-buttons button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.close-action {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #f44336;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.close-action:hover {
+  background-color: #c62828;
+}
